@@ -128,7 +128,7 @@ function ConvertHandler() {
         return undefined;
     }
     
-    return parseFloat(result.toFixed(4));
+    return parseFloat(result.toFixed(5));
   };
   
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
