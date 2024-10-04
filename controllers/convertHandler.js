@@ -12,7 +12,7 @@ const divCheck = ( input ) => {
   // 1.2/2 return ["1.2", "2"]
   // 1/2/2 return ["1", "2", "2"]
 
-  if( arr.length > 2 ) false;
+  if( arr.length > 2 ) return false;
   return arr;
 }
 
@@ -27,7 +27,7 @@ function ConvertHandler() {
     let firstNum = numArr[0];
     let secondNum = numArr[1] || ["1"];
 
-    if( isNaN(firstNum) || isNaN(secondNum) ) undefined;
+    if( isNaN(firstNum) || isNaN(secondNum) ) return undefined;
 
     let result = parseFloat(firstNum) / parseFloat(secondNum);
 
